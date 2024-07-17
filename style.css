@@ -120,12 +120,13 @@ body{
 .sale-img__offer
 {
   position: absolute;
-  bottom:250px;
-  left: 150px;
+  top: 10%;
+  left: 10%;
   border: solid black 1px;
-  padding: 10px;
+  padding: 2%;
   background-color: white;
-  width: 250px;
+  color: black;
+  width: 35%;
   text-align: center;
   animation-name: zoom;
   opacity: 0;
@@ -237,4 +238,19 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width:800px) {
+  body
+  {
+    font-size: 10px;
+  }
+
+  .sale-img__offer
+  {
+    width: 150px;
+  }
 }
